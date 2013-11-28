@@ -1,0 +1,17 @@
+== mysql_changeset_triggers
+
+
+ruby create_changeset_sql.rb -c|-d -u [user|defaults to root] -p -h [host] -b <database>
+
+
+TODO:
+
+Testing:
+Given an existing working database.
+Create a backup.
+Apply generated table/triggers to database.
+Use application.
+Export generated sql statements in db_change_set table.
+Create new DB from backup.
+Apply generated sql statements.
+Compare 2 DBs, they should be the same.
